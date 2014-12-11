@@ -17,10 +17,25 @@
   pre {
     position: relative;
     margin: 0;
-    padding: 1em;
+    padding: 2.5em 1em 1em;
   }
   &:hover {
     border: 1px solid $form-border-color-hover;
+  }
+  code:after {
+    content: attr(data-lang);
+    padding: 5px 8px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include font-size(12,no,12);
+    text-transform: uppercase;
+    color: $white;
+    background: $black;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    border-bottom-right-radius: $border-radius;
   }
 }
 
